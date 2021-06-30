@@ -1,4 +1,6 @@
-import path from 'path'
+import { resolve, extname, basename } from 'path'
+import fs from 'fs-extra'
+import matter from 'gray-matter'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
@@ -6,6 +8,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 import ViteComponents from 'vite-plugin-components'
 import Markdown from 'vite-plugin-md'
+
 import WindiCSS from 'vite-plugin-windicss'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
@@ -16,10 +19,11 @@ import LinkAttributes from 'markdown-it-link-attributes'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '~/': `${resolve(__dirname, 'src')}/`,
     },
   },
   plugins: [
+
     Vue({
       include: [/\.vue$/, /\.md$/],
     }),
@@ -27,6 +31,16 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       extensions: ['vue', 'md'],
+      extendRoute(route) {
+        const path = resolve(__dirname, route.component.slice(1))
+
+        const md = fs.readFileSync(path, 'utf-8')
+        const { data } = matter(md)
+        route.meta = Object.assign(route.meta || {}, { frontmatter: data })
+        route.meta.isMD = extname(path).includes('.md')
+        route.meta.slug = basename(path, '.md')
+        return route
+      },
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -36,6 +50,7 @@ export default defineConfig({
     Markdown({
       wrapperClasses: 'prose prose-sm m-auto text-left',
       headEnabled: true,
+      frontmatter: true,
       markdownItSetup(md) {
         // https://prismjs.com/
         md.use(Prism)
@@ -74,16 +89,16 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS({
-      safelist: 'prose prose-sm m-auto text-left',
+      safelist: 'prose prose-sm text-left',
     }),
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
+      includeAssets: ['favicon.ico', 'robots.txt', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Simsmology',
+        short_name: 'Simsmology',
         theme_color: '#ffffff',
         icons: [
           {
@@ -108,7 +123,7 @@ export default defineConfig({
 
     // https://github.com/intlify/vite-plugin-vue-i18n
     VueI18n({
-      include: [path.resolve(__dirname, 'locales/**')],
+      include: [resolve(__dirname, 'locales/**')],
     }),
   ],
   // https://github.com/antfu/vite-ssg

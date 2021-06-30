@@ -5,12 +5,17 @@ declare module 'vue' {
   export interface GlobalComponents {
     Footer: typeof import('./src/components/Footer.vue')['default']
     README: typeof import('./src/components/README.md')['default']
+    Toolbar: typeof import('./src/components/Toolbar.vue')['default']
+    IcomoonFreeDiamonds: typeof import('virtual:vite-icons/icomoon-free/diamonds')['default']
     CarbonCampsite: typeof import('virtual:vite-icons/carbon/campsite')['default']
     CarbonMoon: typeof import('virtual:vite-icons/carbon/moon')['default']
     CarbonSun: typeof import('virtual:vite-icons/carbon/sun')['default']
     CarbonLanguage: typeof import('virtual:vite-icons/carbon/language')['default']
     CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
     CarbonLogoGithub: typeof import('virtual:vite-icons/carbon/logo-github')['default']
+    CarbonLocation: typeof import('virtual:vite-icons/carbon/location')['default']
+    CarbonHouse: typeof import('virtual:vite-icons/carbon/house')['default']
+    CarbonHome: typeof import('virtual:vite-icons/carbon/home')['default']
     CarbonPedestrian: typeof import('virtual:vite-icons/carbon/pedestrian')['default']
   }
 }

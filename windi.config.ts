@@ -9,7 +9,20 @@ export default defineConfig({
   ],
   attributify: true,
   theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
+      blue: '#4276b7',
+      lime: colors.lime,
+    },
+    fontFamily: {
+      sans: ['SimSans', 'sans-serif'],
+    },
     extend: {
+
       typography: {
         DEFAULT: {
           css: {
@@ -22,7 +35,7 @@ export default defineConfig({
               'textDecoration': 'underline',
               '&:hover': {
                 opacity: 1,
-                color: colors.teal[600],
+                color: colors.lime[600],
               },
             },
             b: { color: 'inherit' },

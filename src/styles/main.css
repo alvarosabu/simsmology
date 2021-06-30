@@ -1,4 +1,6 @@
 @import './markdown.css';
+@import './fonts.css';
+@import './cards.css';
 
 html,
 body,
@@ -9,7 +11,7 @@ body,
 }
 
 html.dark {
-  background: #121212;
+  background: #4276b7;
 }
 
 #nprogress {
@@ -17,7 +19,7 @@ html.dark {
 }
 
 #nprogress .bar {
-  @apply bg-teal-600 opacity-75;
+  @apply bg-lime-400 opacity-75;
 
   position: fixed;
   z-index: 1031;
@@ -30,14 +32,14 @@ html.dark {
 
 .btn {
   @apply px-4 py-1 rounded inline-block
-    bg-teal-600 text-white cursor-pointer
-    hover:bg-teal-700
-    disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+    bg-lime-400 text-white cursor-pointer
+    hover:bg-lime-500
+    disabled:cursor-default disabled:bg-gray-400 disabled:opacity-50;
 }
 
 .icon-btn {
   @apply inline-block cursor-pointer select-none
     opacity-75 transition duration-200 ease-in-out
-    hover:opacity-100 hover:text-teal-600;
+    hover:opacity-100 hover:text-lime-400;
   font-size: 0.9em;
 }
