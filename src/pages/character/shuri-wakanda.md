@@ -7,6 +7,12 @@ age: adult
 career: style-influencer
 level: 'consignment-commentator'
 description: 'Algunos dirían Shuri es divertida y llena de sorpresas, otros, dirían que esta chiflada. Wakanda a venido a Willow Creek junto a su esposo Yao Mao y su galgo Pepino para formar un futuro entre montones de ropa y seguidores en Simstagram'
+aspirations:
+ - nerd-brain
+traits:
+ - self-assured
+ - genius
+ - bookworm
 ---
 
 Shuri Wakanda es un Sim muy activo, con un estilo estrafalario que sencillamente le queda muy bien. Esta capacidad de convinar estilos únicos la ha hecho una influencer de moda muy popular en las redes.

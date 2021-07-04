@@ -7,6 +7,12 @@ age: young-adult
 career: culinary
 level: mixologist
 description: Damiano ha venido de Roma a convertirse en un Maestro cocinero y Chef líder de su propio restaurante. Perfeccionita y apasionado, su llegada abarco todas las miradas de las habitantes de Willow Creek, incluso las casadas. Vive con Bako, su feliz perrito.
+aspirations:
+ - master-chef
+traits:
+ - foodie
+ - creative
+ - extrovert
 ---
 
 Pistoletti es un Sim alegre, divertido, apasionado por la alta cocina y la coctelería. Se ha mudado a Willow Creek con el propósito de lograr su sueño de ser un gran chef y tener su propio restaurante.
@@ -15,7 +21,7 @@ Vive con su perrito Bako, su fiel compañero de aventuras, el cual cata todos lo
 
 ## Amistades
 
-Damiano es buen amigo de la familia [Pancackes](./family/pancackes) y de la familia [Mejores Amigos](./family/mejores-amigos), especialmente de [Summer](/character/summer-holiday) y del friki de [Travis](/character/travis-scott) al cual esta enseñando a ligar un poco en las fiestas con esperanza de que pierda su virgnidad.
+Damiano es buen amigo de la familia [Pancackes](./family/pancackes) y de la familia [Mejores Amigos](./family/mejores-amigos), especialmente de [Summer](/character/summer-holiday) y del friki de [Travis](/character/travis-scott) al cual esta enseñando a ligar un poco en las fiestas con esperanza de que pierda su virginidad.
 
 ![pistoletti friends](/domestic-units/pistoletti/pistoletti-friends.png)
 

@@ -12,14 +12,17 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav class="text-xl mt-6">
-    <router-link class="icon-btn mx-2" to="/world" title="Worlds">
+  <nav class="fixed w-full p-4 left-0 bottom-0 text-xl mt-6 bg-gray-50 z-10 shadow-lg">
+    <router-link class="icon-btn mx-2" to="/world" :title="t('worlds')">
+      <carbon-earth />
+    </router-link>
+    <router-link class="icon-btn px-4 mx-2" to="/family" :title="t('domestic-units')">
       <carbon-campsite />
     </router-link>
-    <router-link class="icon-btn mx-2" to="/family" title="Domestic units">
+    <router-link class="icon-btn px-4 mx-2" to="/lot" :title="t('lots')">
       <carbon-home />
     </router-link>
-    <router-link class="icon-btn mx-2" to="/character" title="Character">
+    <router-link class="icon-btn px-4 mx-2" to="/character" :title="t('characters')">
       <icomoon-free-diamonds />
     </router-link>
     <!--  <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark">
@@ -30,13 +33,5 @@ const toggleLocales = () => {
     <!--  <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales">
       <carbon-language />
     </a> -->
-
-    <router-link class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <carbon-dicom-overlay />
-    </router-link>
-
-    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
-      <carbon-logo-github />
-    </a>
   </nav>
 </template>

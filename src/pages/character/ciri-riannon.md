@@ -6,7 +6,13 @@ gender: female
 age: adult
 career: painter
 level: ''
-description: Ciri ha movido sus pinceles a Willow Creek para llenarlo de creatividad y de un look alternativo. Pelo rosa, muchos tattoos, Friki y su gato Rupert. ¿Podrá conseguir su sueño de ser una gran artista? 
+description: Ciri ha movido sus pinceles a Willow Creek para llenarlo de creatividad y de un look alternativo. Pelo rosa, muchos tattoos, Friki y su gato Rupert. ¿Podrá conseguir su sueño de ser una gran artista?
+aspirations:
+ - friend-of-the-animals
+traits:
+ - cat-lover
+ - creative
+ - geek
 ---
 
 Tatuajes, pelo rosa, amante de los animales, friki con un estupendo sentido del humor, Ciri es la combinación de una mujer perfecta con una desastrosa vida amorosa.

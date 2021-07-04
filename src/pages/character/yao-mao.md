@@ -7,6 +7,12 @@ age: young-adult
 career: athlete
 level: dance-team-capitan
 description: "Yao Mao es la personificación del Bully atleta que hacía la vida imposible a la gente en la universidad. Enfocado en su amor propio, una alimentación balanceada y grandes músculos, Mao entrena insesantemente para convertirse en un atleta de primera."
+aspirations:
+ - bodybuilder
+traits:
+ - high-metabolism
+ - evil
+ - ambitious
 ---
 
 Campéon de todas las disciplinas posibles en la universidad, capitán del equipo y el temor de cualquier estudiante un poco friki, Yao Mao llega a Willow Creek con esperanzas de ver su nombre algún dia en el salón de la fama.

@@ -8,11 +8,34 @@ button:
 career: Trabajo
 female: Femenino
 gender: Género
+worlds: Mundos
+domestic-units: Mundos
+lots: Lotes
+characters: Sims
 careers: 
   culinary: Trabajador culinario
   painter: Pintor
   athlete: Atleta
   style-influencer: Influencer de estilo
+traits:
+  label: Rasgos
+  foodie: Gastrónomo
+  creative: Creativo
+  extrovert: Extrovertido
+  cat-lover: Fan de los gatos
+  geek: Friki
+  self-assured: Seguro de sí
+  genius: Genio
+  bookworm: Bibliofila
+  high-metabolism: Hipermetabolismo
+  evil: Malvado
+  ambitious: Ambicioso
+aspirations:
+  label: Aspiraciones
+  master-chef: Chef Maestro
+  nerd-brain: Cerebrito
+  bodybuilder: Culturista
+  friend-of-the-animals: Amiga de los animales
 intro:
   desc: Plantilla de Inicio de Vite Dogmática
   dynamic-route: Demo de ruta dinámica

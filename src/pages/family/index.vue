@@ -27,5 +27,5 @@ const { families } = useDomesticUnits()
 
 <route lang="yaml">
 meta:
-  title: Worlds
+  title: Domestic Units
 </route>

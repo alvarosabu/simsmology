@@ -3,15 +3,16 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AspirationTag: typeof import('./src/components/AspirationTag.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     GenderIcon: typeof import('./src/components/GenderIcon.vue')['default']
     README: typeof import('./src/components/README.md')['default']
     Toolbar: typeof import('./src/components/Toolbar.vue')['default']
+    TraitTag: typeof import('./src/components/TraitTag.vue')['default']
     IcomoonFreeDiamonds: typeof import('virtual:vite-icons/icomoon-free/diamonds')['default']
+    CarbonEarth: typeof import('virtual:vite-icons/carbon/earth')['default']
     CarbonCampsite: typeof import('virtual:vite-icons/carbon/campsite')['default']
     CarbonHome: typeof import('virtual:vite-icons/carbon/home')['default']
-    CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
-    CarbonLogoGithub: typeof import('virtual:vite-icons/carbon/logo-github')['default']
     CarbonGenderFemale: typeof import('virtual:vite-icons/carbon/gender-female')['default']
     CarbonGenderMale: typeof import('virtual:vite-icons/carbon/gender-male')['default']
     CarbonTransgender: typeof import('virtual:vite-icons/carbon/transgender')['default']
