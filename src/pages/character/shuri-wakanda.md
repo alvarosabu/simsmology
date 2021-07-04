@@ -35,7 +35,7 @@ Shuri es muy fan de Bebe Rexha, asi que cuando supo que estaría en el festival 
 
 Yao le regalo las entradas como regalo de cumpleaños y juntos pasaron una divertida tarde, con revolcón en tienda de campaña ajena incluida.
 
-![](/domestic-units/wakanda/sims-sessions-ñiqui-ñiqui.png)
+![](/domestic-units/wakanda/sims-sessions-niqui-niqui.png)
 
 <route lang="yaml">
 meta:

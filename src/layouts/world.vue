@@ -16,7 +16,7 @@ const world = computed(() => route.meta.frontmatter)
         <router-view />
       </div>
       <aside class="w-1/3 card prose prose-sm">
-        <img :src="world?.map" :alt="word?.title">
+        <img :src="world?.map" :alt="world?.title">
         <div class="px-4">
           <h2>{{ world.title }}</h2>
           <blockquote class="text-sm">

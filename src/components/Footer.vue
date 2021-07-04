@@ -12,7 +12,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav class="fixed w-full p-4 left-0 bottom-0 text-xl mt-6 bg-gray-50 z-10 shadow-lg">
+  <nav class="fixed w-full p-4 left-0 bottom-0 text-xl mt-6 bg-gray-50 z-10 shadow-lg underline">
     <router-link class="icon-btn mx-2" to="/world" :title="t('worlds')">
       <carbon-earth />
     </router-link>
