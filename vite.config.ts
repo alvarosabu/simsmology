@@ -48,7 +48,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
-      wrapperClasses: 'prose prose-sm m-auto text-left',
+      wrapperClasses: 'prose prose-md m-auto text-left',
       headEnabled: true,
       frontmatter: true,
       markdownItSetup(md) {

@@ -1,8 +1,11 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
+
 const route = useRoute()
+const { t } = useI18n()
 
 const character = computed(() => route.meta.frontmatter)
 
@@ -22,6 +25,33 @@ const character = computed(() => route.meta.frontmatter)
           <blockquote class="text-sm">
             <p>{{ character.description }}</p>
           </blockquote>
+          <div>
+            <div class="flex w-full items-center text-left px-4">
+              <strong class="w-1/2">{{ t('gender') }}</strong>
+              <span class="w-1/2 flex items-center">
+                <GenderIcon
+                  class="mr-4"
+                  :gender="character.gender"
+                />
+
+                {{ t(character.gender) }}
+
+              </span>
+            </div>
+            <div class="flex w-full items-center text-left px-4">
+              <strong class="w-1/2">{{ t('career') }}</strong>
+              <span class="w-1/2 flex items-center">
+                <img
+                  class="mr-4 w-4"
+                  :src="`/icons/${character.career}.png`"
+                  :alt="t(character.career)"
+                />
+                <span>
+                  {{ t(`careers.${character.career}`) }}
+                </span>
+              </span>
+            </div>
+          </div>
         </div>
       </aside>
     </div>

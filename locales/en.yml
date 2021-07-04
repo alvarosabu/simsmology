@@ -5,9 +5,18 @@ button:
   home: Home
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
+career: Career
+female: Female
+gender: Gender
+careers: 
+  culinary: Caterer
+  painter: Artist
+  athlete: Athlete
+  style-influencer: Style Influencer
 intro:
   desc: Opinionated Vite Starter Template
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
   whats-your-name: What's your name?
+male: Male
 not-found: Not found
